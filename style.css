@@ -158,97 +158,78 @@ nav a:hover::after {
 .hero-gallery img:hover {
   transform: scale(1.03);
 }
-.hero-banner {
-  background-image: url('img/casamento-banner.jpg');
+
+  
+
+.hero-split-banner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  background: linear-gradient(to right, #fffaf8, #fceeea);
+}
+
+.banner-image {
+  flex: 1;
+  background-image: url('img/casamento-banner.png');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.overlay {
-  background-color: rgba(255, 250, 248, 0.85);
-  padding: 40px;
-  border-radius: 20px;
-  max-width: 700px;
-}
-
-.hero-banner h1 {
-  font-size: 2.8em;
-  color: #a86c5c;
-}
-
-.hero-banner p {
-  font-size: 1.2em;
-  margin: 20px 0;
-  color: #4b3b2f;
-}
-.hero-banner {
-  background-image: url('img/casamento-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 1;
-}
-
-.hero-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35); /* escurecimento suave */
-  z-index: 0;
-}
-.hero-banner {
-  background-image: url('img/casamento-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 1;
+  min-height: 300px;
+  border-radius: 20px 0 0 20px;
   filter: brightness(0.9) contrast(1.05);
 }
-.hero-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
-  z-index: 0;
+
+.banner-text {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 250, 248, 0.8);
+  text-align: left;
 }
+
+.banner-text h1 {
+  font-size: 2.5em;
+  color: #a86c5c;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  font-size: 1.2em;
+  color: #4b3b2f;
+  margin-bottom: 30px;
+}
+
+.banner-text button {
+  align-self: flex-start;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
-  .hero-banner {
-    height: 70vh;
-    background-position: center top;
+  .hero-split-banner {
+    flex-direction: column;
+    height: auto;
   }
 
-  .overlay {
-    padding: 20px;
-    max-width: 90%;
+  .banner-image {
+    border-radius: 20px 20px 0 0;
+    height: 250px;
   }
 
-  .hero-banner h1 {
+  .banner-text {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .banner-text h1 {
     font-size: 1.8em;
   }
 
-  .hero-banner p {
+  .banner-text p {
     font-size: 1em;
+  }
+
+  .banner-text button {
+    align-self: center;
   }
 }
