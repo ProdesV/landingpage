@@ -233,16 +233,34 @@ nav a:hover::after {
     align-self: center;
   }
 }
+.conteudo-lateral {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.servicos {
+  flex: 1;
+  min-width: 280px;
+}
+
 .imagem-equipe {
+  flex: 1;
+  min-width: 280px;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .imagem-equipe img {
   max-width: 100%;
-  width: 600px;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+h1, h2, .titulo-cerimonial {
+  font-family: 'Rochester', cursive;
+}
+
