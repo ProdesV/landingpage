@@ -260,7 +260,4 @@ nav a:hover::after {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-h1, h2, .titulo-cerimonial {
-  font-family: 'Rochester', cursive;
-}
 
