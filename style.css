@@ -3,8 +3,8 @@ body {
   font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
-  background-color: #fffaf8;
-  color: #4b3b2f;
+  background-color: #fdf6e3;
+  color: #8b6f47;
   scroll-behavior: smooth;
 }
 
@@ -16,7 +16,7 @@ header, section, footer {
 
 /* Cabeçalho */
 header {
-  background-color: #fceeea;
+  background-color: #fff8e1;
   animation: fadeInUp 1s ease forwards;
 }
 
@@ -24,13 +24,13 @@ header {
 h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #a86c5c;
+  color: #bfa133;
 }
 
 h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #b07a6f;
+  color: #d4af37;
 }
 
 p {
@@ -40,7 +40,7 @@ p {
 
 /* Botões */
 button {
-  background-color: #d4a373;
+  background-color: #d4af37;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-  background-color: #c58b5f;
+  background-color: #bfa133;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
@@ -69,7 +69,7 @@ li {
 /* Cartões de serviço */
 .card {
   background-color: #fff;
-  border: 1px solid #f3dcd2;
+  border: 1px solid #f5e6c5;
   border-radius: 10px;
   padding: 20px;
   margin: 10px auto;
@@ -87,7 +87,7 @@ blockquote {
   font-style: italic;
   margin: 30px auto;
   max-width: 600px;
-  color: #7a5c4b;
+  color: #a88b5c;
 }
 
 cite {
@@ -104,7 +104,7 @@ footer {
 
 nav a {
   margin: 0 10px;
-  color: #4b3b2f;
+  color: #8b6f47;
   text-decoration: none;
   position: relative;
 }
@@ -116,7 +116,7 @@ nav a::after {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #d4a373;
+  background-color: #d4af37;
   transition: width 0.3s ease;
 }
 
@@ -143,7 +143,7 @@ nav a:hover::after {
   scroll-snap-type: x mandatory;
   gap: 10px;
   padding: 20px;
-  background-color: #fceeea;
+  background-color: #fff8e1;
 }
 
 .hero-gallery img {
@@ -190,13 +190,13 @@ nav a:hover::after {
 
 .banner-text h1 {
   font-size: 2.5em;
-  color: #a86c5c;
+  color: #bfa133;
   margin-bottom: 20px;
 }
 
 .banner-text p {
   font-size: 1.2em;
-  color: #4b3b2f;
+  color: #a08b5c;
   margin-bottom: 30px;
 }
 
@@ -259,5 +259,16 @@ nav a:hover::after {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.whatsapp-button {
+  display: inline-block;
+  background-color: #d4af37; /* cor do WhatsApp */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
 }
 
