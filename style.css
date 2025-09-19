@@ -1,22 +1,25 @@
 /* Estilo base */
+/* Estilo base */
 body {
   font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
-  background-color: #fdf6e3;
-  color: #8b6f47;
+  background-color: #fffaf8;
+  color: #4b3b2f;
   scroll-behavior: smooth;
 }
 
 /* Estrutura das seções */
-header, section, footer {
+header,
+section,
+footer {
   padding: 60px 20px;
   text-align: center;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #fff8e1;
+  background-color: #fceeea;
   animation: fadeInUp 1s ease forwards;
 }
 
@@ -24,13 +27,13 @@ header {
 h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #bfa133;
+  color: #a86c5c;
 }
 
 h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #d4af37;
+  color: #b07a6f;
 }
 
 p {
@@ -40,7 +43,7 @@ p {
 
 /* Botões */
 button {
-  background-color: #d4af37;
+  background-color: #d4a373;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -51,12 +54,13 @@ button {
 }
 
 button:hover {
-  background-color: #bfa133;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #c58b5f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Listas */
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
@@ -69,12 +73,12 @@ li {
 /* Cartões de serviço */
 .card {
   background-color: #fff;
-  border: 1px solid #f5e6c5;
+  border: 1px solid #f3dcd2;
   border-radius: 10px;
   padding: 20px;
   margin: 10px auto;
   max-width: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -87,7 +91,7 @@ blockquote {
   font-style: italic;
   margin: 30px auto;
   max-width: 600px;
-  color: #a88b5c;
+  color: #7a5c4b;
 }
 
 cite {
@@ -104,7 +108,7 @@ footer {
 
 nav a {
   margin: 0 10px;
-  color: #8b6f47;
+  color: #4b3b2f;
   text-decoration: none;
   position: relative;
 }
@@ -116,7 +120,7 @@ nav a::after {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #d4af37;
+  background-color: #d4a373;
   transition: width 0.3s ease;
 }
 
@@ -137,13 +141,14 @@ nav a:hover::after {
     transform: translateY(0);
   }
 }
+
 .hero-gallery {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 10px;
   padding: 20px;
-  background-color: #fff8e1;
+  background-color: #fceeea;
 }
 
 .hero-gallery img {
@@ -158,8 +163,6 @@ nav a:hover::after {
 .hero-gallery img:hover {
   transform: scale(1.03);
 }
-
-  
 
 .hero-split-banner {
   display: flex;
@@ -190,13 +193,13 @@ nav a:hover::after {
 
 .banner-text h1 {
   font-size: 2.5em;
-  color: #bfa133;
+  color:  #a86c5c;
   margin-bottom: 20px;
 }
 
 .banner-text p {
   font-size: 1.2em;
-  color: #a08b5c;
+  color: #b07a6f;
   margin-bottom: 30px;
 }
 
@@ -233,6 +236,7 @@ nav a:hover::after {
     align-self: center;
   }
 }
+
 .conteudo-lateral {
   display: flex;
   align-items: flex-start;
@@ -258,11 +262,13 @@ nav a:hover::after {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .whatsapp-button {
   display: inline-block;
-  background-color: #d4af37; /* cor do WhatsApp */
+  background-color: #c58b5f;
+  /* cor do WhatsApp */
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -271,4 +277,3 @@ nav a:hover::after {
   text-align: center;
   cursor: pointer;
 }
-
